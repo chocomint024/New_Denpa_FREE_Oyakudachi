@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/N.jpg') no-repeat center top; /* 背景を上部に配置 */
+    background-size: 100% auto; /* 横幅いっぱいにして、縦は自動調整 */
+    color: white;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 1320px;
+    object-fit: cover;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景で可読性を向上 */
+    color: black;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: block;
+    width: 300px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.discord {
+    background-image: url('images/discord.png'); /* Discordボタンの画像 */
+}
+
+.qr {
+    background-image: url('images/qr.png'); /* QRコード生成ボタンの画像 */
+}
+
+.physique {
+    background-image: url('images/physique.png'); /* 体格表ボタンの画像 */
+}
+
+.battle {
+    background-image: url('images/battle.png'); /* バトルタワー攻略ボタンの画像 */
+}
