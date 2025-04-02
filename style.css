@@ -160,15 +160,13 @@ transition: transform 0.2s ease-in-out;
     display: block;
 }
 
-
-
 .vertical-list {
     list-style: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
     display: flex;
     flex-direction: column; /* 縦並びにする */
     align-items: center; /* 中央揃え */
-    gap: 0; /* 隙間を完全になくす */
+    gap: 10px; /* 各要素の間隔 */
 }
 
 .vertical-list li {
@@ -178,12 +176,45 @@ transition: transform 0.2s ease-in-out;
 .vertical-list li a img {
     width: 160px; /* 画像サイズ統一 */
     height: auto;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; /* スムーズな拡大アニメーション */
 }
 
 .vertical-list li a img:hover {
     transform: scale(1.1); /* ホバー時に拡大 */
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列レイアウト */
+    gap: 0; /* 隙間を完全になくす */
+    width: 100%; /* 幅いっぱいに広げる */
+    max-width: 900px; /* 幅を広げる（好みに応じて調整） */
+    margin: 0 auto; /* 中央配置 */
+}
+
+.grid-container a {
+    width: 100%; /* 各ボタンを均等に広げる */
+}
+
+.grid-container a img {
+    width: 100%; /* 親要素に対してピッタリ */
+    height: auto; /* 縦横比を維持 */
+    display: block; /* 画像の余白を削除 */
+    transition: transform 0.2s ease-in-out; /* スムーズな拡大アニメーション */
+}
+
+.grid-container a img:hover {
+    transform: scale(1.1); /* ホバー時に拡大 */
+}
+
+/* 画面サイズが大きい場合は画像も大きくする */
+@media (min-width: 1024px) {
+    .grid-container {
+        max-width: 1200px; /* デスクトップで大きく表示 */
+    }
+}
+
 
 
 .grid-container {
