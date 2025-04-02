@@ -189,7 +189,7 @@ transition: transform 0.2s ease-in-out;
 /* パソコンでさらに大きくする */
 @media (min-width: 1024px) {
     .vertical-list {
-        max-width: 1000px;
+        max-width: 1600px;
     }
 
     .vertical-list li {
