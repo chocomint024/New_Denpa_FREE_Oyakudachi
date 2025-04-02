@@ -165,30 +165,24 @@ transition: transform 0.2s ease-in-out;
 .vertical-list {
     list-style: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px; /* 画像間の隙間を調整 */
+    flex-direction: column; /* 縦並びにする */
+    align-items: center; /* 中央揃え */
+    gap: 0; /* 隙間を完全になくす */
 }
 
 .vertical-list li {
-    display: flex; /* フレックスボックスで画像サイズを制御 */
-    justify-content: center; /* 中央揃え */
-    width: 100%; /* 親要素の幅を超えないように */
-    max-width: 160px; /* 画像の最大幅を設定 */
-    margin: 0;
-    padding: 0;
+    display: block; /* 縦並びを強制 */
 }
 
 .vertical-list li a img {
-    width: 100%; /* 親要素の幅にフィット */
+    width: 160px; /* 画像サイズ統一 */
     height: auto;
     transition: transform 0.2s ease-in-out;
 }
 
 .vertical-list li a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* ホバー時に拡大 */
 }
 
 
