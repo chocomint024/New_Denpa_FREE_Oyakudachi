@@ -162,7 +162,7 @@ transition: transform 0.2s ease-in-out;
 
 .vertical-list {
     width: 100%; /* 親要素の幅を画面いっぱいにする */
-    max-width: 600px; /* 必要なら最大幅を設定 */
+    max-width: 1200px; /* 必要なら最大幅を設定 */
     list-style: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
     margin: 0; /* リスト全体の余白を削除 */
@@ -175,7 +175,7 @@ transition: transform 0.2s ease-in-out;
 .vertical-list li {
     display: block;
     width: 100%;
-    max-width: 600px; /* 最大幅を設定 */
+    max-width: 1200px; /* 最大幅を設定 */
     height: auto;
     margin: 0;
     padding: 0;
