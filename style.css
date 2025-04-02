@@ -166,7 +166,7 @@ transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column; /* 縦並びにする */
     align-items: center; /* 中央揃え */
-    gap: 10px; /* 各要素の間隔 */
+    gap: 0; /* 隙間を完全になくす */
 }
 
 .vertical-list li {
@@ -183,6 +183,24 @@ transition: transform 0.2s ease-in-out;
     transform: scale(1.1); /* ホバー時に拡大 */
 }
 
+
+.vertical-list {
+    list-style: none; /* リストのマーカーを非表示 */
+    padding: 0;
+    margin: 0; /* リスト全体の余白を削除 */
+}
+
+.vertical-list li {
+    margin: 0; /* 各リスト項目の余白を削除 */
+    padding: 0; /* 各リスト項目のパディングを削除 */
+}
+
+.vertical-list li a img {
+    display: block; /* 画像の下に隙間ができないようにする */
+    width: 100%; /* 画像の幅を調整（不要なら削除） */
+    height: auto;
+    margin: 0; /* 余白を削除 */
+}
 
 .grid-container {
     display: grid;
