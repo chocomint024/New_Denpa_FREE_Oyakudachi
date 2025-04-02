@@ -162,10 +162,10 @@ transition: transform 0.2s ease-in-out;
 
 .vertical-list {
     width: 100%; /* 親要素の幅を画面いっぱいにする */
-    max-width: 1200px; /* 必要なら最大幅を設定 */
+    max-width: 800px; /* パソコンでのサイズを調整 */
     list-style: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
-    margin: 0; /* リスト全体の余白を削除 */
+    margin: 0 auto; /* 中央揃え */
     display: flex;
     flex-direction: column; /* 縦並びにする */
     align-items: center; /* 中央揃え */
@@ -175,7 +175,7 @@ transition: transform 0.2s ease-in-out;
 .vertical-list li {
     display: block;
     width: 100%;
-    max-width: 1200px; /* 最大幅を設定 */
+    max-width: 800px; /* パソコンでの最大幅を増やす */
     height: auto;
     margin: 0;
     padding: 0;
@@ -185,6 +185,18 @@ transition: transform 0.2s ease-in-out;
     display: block; /* リンクをブロック要素に */
     margin: 0; /* 余白を削除 */
 }
+
+/* パソコンでさらに大きくする */
+@media (min-width: 1024px) {
+    .vertical-list {
+        max-width: 1000px;
+    }
+
+    .vertical-list li {
+        max-width: 1000px;
+    }
+}
+
 
 .vertical-list li a img {
     width: auto; /* 画像の元のサイズを保持 */
