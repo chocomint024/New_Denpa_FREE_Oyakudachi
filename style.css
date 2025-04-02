@@ -175,6 +175,7 @@ transition: transform 0.2s ease-in-out;
 .vertical-list li {
     display: block;
     width: 100%;
+    max-width: 600px; /* 最大幅を設定 */
     height: auto;
     margin: 0;
     padding: 0;
@@ -186,9 +187,10 @@ transition: transform 0.2s ease-in-out;
 }
 
 .vertical-list li a img {
-    width: 100%; /* 親要素に対して幅を100%に設定 */
-    max-width: 300px; /* 最大幅を設定 */
+    width: auto; /* 画像の元のサイズを保持 */
+    max-width: 100%; /* 親要素より大きくならない */
     height: auto; /* 縦横比を維持 */
+    display: block; /* 余白をなくす */
     transition: transform 0.2s ease-in-out; /* スムーズな拡大アニメーション */
 }
 
