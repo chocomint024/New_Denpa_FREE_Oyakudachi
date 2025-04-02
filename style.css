@@ -277,3 +277,9 @@ transition: transform 0.2s ease-in-out;
         max-width: 1200px; /* デスクトップで大きく表示 */
     }
 }
+
+.twitter-timeline {
+    width: 320px;  /* タイムラインの幅 */
+    height: 500px; /* タイムラインの高さ */
+    overflow: hidden; /* はみ出た部分を隠す */
+}
