@@ -299,6 +299,12 @@ transition: transform 0.2s ease-in-out;
     height: auto;  /* 縦横比を維持 */
 }
 
+@media screen and (min-width: 768px) {
+    .old-free-site img {
+        width: 250px; /* PCでは大きく */
+    }
+}
+
 /* 旧FREEお役立ちサイトを右寄せ */
 .old-free-site {
     display: flex;
