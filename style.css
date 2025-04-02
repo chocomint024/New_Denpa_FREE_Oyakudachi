@@ -283,3 +283,22 @@ transition: transform 0.2s ease-in-out;
     height: 500px; /* タイムラインの高さ */
     overflow: hidden; /* はみ出た部分を隠す */
 }
+
+/* タイムラインを中央配置 */
+.twitter-timeline-container {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え（必要なら） */
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* 旧FREEお役立ちサイトの項目を右寄せ */
+.vertical-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 右寄せ */
+    width: 100%;
+    max-width: 800px; /* 必要なら調整 */
+    margin-right: 20px; /* 右側に余白を追加 */
+}
