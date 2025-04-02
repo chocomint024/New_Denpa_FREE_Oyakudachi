@@ -297,11 +297,12 @@ transition: transform 0.2s ease-in-out;
 .old-free-site img {
     width: 150px;  /* サイズを小さく */
     height: auto;  /* 縦横比を維持 */
+    transition: transform 0.2s ease-in-out; /* スムーズな拡大アニメーション */
 }
 
 @media screen and (min-width: 768px) {
     .old-free-site img {
-        width: 250px; /* PCでは大きく */
+        width: 400px; /* PCでは大きく */
     }
 }
 
@@ -309,5 +310,13 @@ transition: transform 0.2s ease-in-out;
 .old-free-site {
     display: flex;
     justify-content: flex-end;
-    padding-top: 10px; /* 他の要素との間隔を調整 */
+    gap: 0; /* 隙間を完全になくす */
+    margin: 0; /* マージンを削除 */
+    padding: 0; /* パディングを削除 */
+}
+
+/* 旧FREEお役立ちサイトのリストアイテムの余白調整 */
+.vertical-list li {
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* パディングを削除 */
 }
