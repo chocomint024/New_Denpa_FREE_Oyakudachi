@@ -320,3 +320,7 @@ transition: transform 0.2s ease-in-out;
     margin: 0; /* 余白を削除 */
     padding: 0; /* パディングを削除 */
 }
+
+.old-free-site img:hover {
+    transform: scale(1.1); /* ホバー時に拡大 */
+}
