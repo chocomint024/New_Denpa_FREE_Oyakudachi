@@ -174,7 +174,7 @@ transition: transform 0.2s ease-in-out;
 
 .vertical-list li {
     display: block;
-    width: auto; /* 画像のサイズに合わせる */
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
