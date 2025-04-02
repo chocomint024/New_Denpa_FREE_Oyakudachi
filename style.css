@@ -21,7 +21,7 @@ body {
     width: 80%;
     margin: auto;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景で可読性を向上 */
+    background-color: transparent; /* 半透明の白背景で可読性を向上 */
     color: black;
     border-radius: 10px;
     display: flex;
