@@ -7,33 +7,52 @@
     <style>
         .gallery {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+            flex-direction: column; /* 縦並びに変更 */
+            align-items: center;
+            gap: 40px;
             margin: 20px;
         }
 
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item h2 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #fff;
+        }
+
         .gallery img {
-            max-width: 300px;
+            max-width: 90%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
 
         .back-link {
-            margin-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        body {
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>体格表</h1>
-        <p>用意した体格表の画像を表示します。</p>
 
         <div class="gallery">
-            <img src="images/taikaku_1.png" alt="体格表1">
-            <img src="images/taikaku_21.png" alt="体格表2">
-            <!-- 必要に応じて画像を増やせます -->
+            <div class="image-item">
+                <h2>レベル1体格表(HP)</h2>
+                <img src="images/taikaku_1.png" alt="体格表1">
+            </div>
+            <div class="image-item">
+                <h2>レベル21体格表(素早さ)</h2>
+                <img src="images/taikaku_21.png" alt="体格表2">
+            </div>
         </div>
 
         <div class="back-link">
