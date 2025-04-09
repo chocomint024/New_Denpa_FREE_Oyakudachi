@@ -7,12 +7,12 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "images/monsho.png",
+      "src": "images/monsho_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "images/monsho.png",
+      "src": "images/monsho_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
