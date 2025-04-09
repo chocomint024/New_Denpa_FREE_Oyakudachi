@@ -43,10 +43,12 @@
             border: none;
             border-radius: 10px;
             display: block;
+            margin: 10px 0; /* iframeの上下のマージン */
         }
 
         blockquote.twitter-tweet {
-            margin: 0 auto;
+            margin: 10px 0; /* X投稿の上下のマージン */
+            max-width: 100%; /* 幅を100%に設定 */
         }
 
         .back-link {
@@ -67,7 +69,7 @@
         <!-- ✅ noteセクション -->
         <div class="section">
             <div class="section-title">note解説記事</div>
-            <iframe class="note-embed" src="https://note.com/embed/notes/n8bdba80afd0b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe>
+            <iframe class="note-embed" src="https://note.com/embed/notes/n8bdba80afd0b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0; margin: 10px 0; position: static; visibility: visible;" height="400"></iframe>
         </div>
 
         <!-- ✅ X投稿セクション -->
@@ -83,7 +85,7 @@
         <div class="description">
             <h2>バトルタワー攻略方法</h2>
             <p>
-                    今後ここにバトルタワー攻略について詳しく書いていきます<br>
+                今後ここにバトルタワー攻略について詳しく書いていきます<br>
                 <br>
                 <br>
                 noteなどの記事をみてわからないことがあればお気軽に質問ください！
