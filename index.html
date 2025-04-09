@@ -11,7 +11,7 @@
 
     <!-- PWA対応のために追加 -->
     <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" href="images/monsho.png">
+    <link rel="apple-touch-icon" href="images/monsho_192×192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="New電波人間FREE!">
@@ -126,3 +126,18 @@
        Tweets by @denpaningen
     </a>
 </div>
+
+    <!-- Service Workerの登録 -->
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+            .then((reg) => {
+                console.log('Service Worker registered ✅', reg);
+            })
+            .catch((err) => {
+                console.error('Service Worker registration failed ❌', err);
+            });
+    }
+</script>
+</body>
+</html>
