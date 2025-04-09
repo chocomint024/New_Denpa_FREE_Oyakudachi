@@ -17,33 +17,36 @@
             margin-bottom: 30px;
         }
 
-        h2 {
-            margin-top: 40px;
-            font-size: 1.4em;
-            border-left: 5px solid #333;
-            padding-left: 10px;
-            color: #333;
+        .section {
+            margin-bottom: 20px;
         }
 
-        .embed-section {
-            margin-bottom: 30px;
+        .section-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .description {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.6;
+            font-size: 1em;
+            margin-top: 30px;
         }
 
         iframe {
             width: 100%;
-            height: 600px;
+            max-width: 494px;
+            height: 400px;
             border: none;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: block;
         }
 
-        .long-description {
-            margin-top: 50px;
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 1em;
-            line-height: 1.8;
+        blockquote.twitter-tweet {
+            margin: 0 auto;
         }
 
         .back-link {
@@ -52,36 +55,37 @@
         }
     </style>
 
-    <!-- Twitterウィジェット読み込み -->
+    <!-- Twitter ウィジェット読み込み -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- note埋め込み用 -->
+    <script async src="https://note.com/scripts/embed.js" charset="utf-8"></script>
 </head>
 <body>
     <div class="container">
         <h1>バトルタワー攻略</h1>
 
-        <!-- X埋め込み -->
-        <div class="embed-section">
-            <h2>Xでの投稿</h2>
+        <!-- ✅ noteセクション -->
+        <div class="section">
+            <div class="section-title">note解説記事</div>
+            <iframe class="note-embed" src="https://note.com/embed/notes/n8bdba80afd0b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe>
+        </div>
+
+        <!-- ✅ X投稿セクション -->
+        <div class="section">
+            <div class="section-title">X投稿（旧Twitter）</div>
             <blockquote class="twitter-tweet">
-                <a href="https://x.com/men_rome/status/1865758438242037975"></a>
+                <a href="https://twitter.com/denpaningen/status/1234567890123456789"></a>
             </blockquote>
         </div>
 
-        <!-- note埋め込み -->
-        <div class="embed-section">
-            <h2>note記事：攻略まとめ</h2>
-            <iframe class="note-embed" src="https://note.com/embed/notes/n8bdba80afd0b" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe><script async src="https://note.com/scripts/embed.js" charset="utf-8"></script>
-        </div>
-
-        <!-- 説明欄 -->
-        <div class="long-description">
-            <h2>攻略の詳細解説</h2>
+        <!-- ✅ 説明セクション -->
+        <div class="description">
+            <h2>詳細な攻略解説</h2>
             <p>
-                このページでは、Xで紹介された戦略やnoteでまとめられた攻略情報をまとめて閲覧できます。
-                <br><br>
-                バトルタワーの出現パターンやおすすめの電波人間の構成、アンテナの選び方なども追加で記述可能です。
-                <br><br>
-                必要であれば表や画像などをここに追加して、視覚的に分かりやすくすることもできます！
+                このページでは、バトルタワーを攻略するための戦術・おすすめ編成・注意点などを紹介しています。<br>
+                noteには文字ベースでの細かい解説、Xには画像付きで実際の動き方やポイントが投稿されています。<br>
+                <br>
+                自分に合ったスタイルで攻略方法を参考にしてみてください。攻略法に関しての質問がある場合は、XのDMやDiscordで受け付けています！
             </p>
         </div>
 
