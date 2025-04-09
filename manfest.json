@@ -1,20 +1,20 @@
 {
   "name": "New電波人間のRPG FREE!お役立ちサイト",
-  "short_name": "電波人間",
-  "start_url": "/index.html",
+  "short_name": "電波人間FREE",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "images/monsho.png",
       "sizes": "192x192",
-      "type": "image/monsho.png"
+      "type": "image/png"
     },
     {
-      "src": "icon-512x512.png",
+      "src": "images/monsho.png",
       "sizes": "512x512",
-      "type": "image/monsho.png"
+      "type": "image/png"
     }
   ]
 }
